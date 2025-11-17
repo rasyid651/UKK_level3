@@ -6,7 +6,8 @@ Bahasa yang digunakan :
 - HTML & CSS
 - PHP
 
-Hubungi Untuk Kerja Sama\
+👨‍💻 Author
+Muhammad Al Rasyid UIUX Design & Front-End | Figma & VsCode
 - Email : rystostudio@gmail.com
 - Instagram : @rasyid_ux
 
