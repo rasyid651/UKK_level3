@@ -1,4 +1,4 @@
-=======Project CRUD UKK Level 3=======
+=======**Project CRUD UKK Level 3**=======
 
 Membuat Website Data Alumni Menggunakan CRUD
 
@@ -6,11 +6,14 @@ Bahasa yang digunakan :
 - HTML & CSS
 - PHP
 
-👨‍💻 Author
+👨‍💻 **Author**
+
 Muhammad Al Rasyid UIUX Design & Front-End | Figma & VsCode
 - Email : rystostudio@gmail.com
 - Instagram : @rasyid_ux
 
 @calon_software_engineering
-@cuiuxdesign
+
+@uiuxdesign
+
 @semangatt ukk nyaa❤️
