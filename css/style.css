@@ -1,0 +1,96 @@
+*,html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.nav {
+    background-color: rgb(52, 52, 240);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 28px;
+}
+
+.nav h1 {
+    color: white;
+    font-size: 28px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(52, 52, 240);
+    background-color: white;
+    padding: 10px 14px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.nav a:hover {
+    color: rgb(39, 39, 247);
+    transition: 1s;
+    box-shadow: 7px 10px 42px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 10px 42px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 10px 42px -7px rgba(0,0,0,0.75);
+}
+
+.container-pencarian {
+    display: flex;
+    justify-content: center; 
+}
+
+.pencarian {
+    background-color: rgb(39, 39, 247);
+    width: 350px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 34px;
+    gap: 18px;
+    padding: 24px 32px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.pencarian h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.pencarian input {
+    border: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.pencarian button {
+    color: rgb(39, 39, 247);
+    border: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.pencarian button:hover {
+    cursor: pointer;
+}
