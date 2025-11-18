@@ -18,23 +18,36 @@ if(isset($_POST['perbarui'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Data Alumni</title>
+    <link rel="stylesheet" href="./css/edit.css">
 </head>
 <body>
 
-    <div>
-        <h1>Edit Data Alumni</h1>
-        <a href="index.php">Kembali</a>
+    
+     <video autoplay muted loop id="video-bg">
+        <source src="bg1.mp4" type="video/mp4">
+    </video>
+
+    <div id="content"></div>
+
+    <div class="container-nav">
+        <div class="nav">
+            <h1>Manajemen Data Alumni</h1>
+            <a href="index.php">Kembali</a>
+        </div>
     </div>
 
-   <form method="post">
-       <input name="nama" value="<?= $data['nama']?>" placeholder="Masukkan Nama" required>
-        <input  name="nik" value="<?= $data['nik'] ?>" placeholder="Masukkan Nik" required>
-        <input name="nisn" value="<?= $data['nisn'] ?>" placeholder="Masukkan Nisn" required>
-        <input name="tempat_lahir" value="<?= $data['tempat_lahir'] ?>" placeholder="Masukkan Tempat Lahir" required>
-        <input name="tanggal_lahir" value="<?= $data['tanggal_lahir'] ?>" required>
+    <main>
+        <div class="container-form">
+            <h2>Edit Data Tambahan</h2>
+            <form method="post">
+           <input type="text" name="nama" value="<?= $data['nama']?>" placeholder="Masukkan Nama" required>
+           <input type="text" name="nik" value="<?= $data['nik'] ?>" placeholder="Masukkan Nik" required>
+        <input type="text" name="nisn" value="<?= $data['nisn'] ?>" placeholder="Masukkan Nisn" required>
+        <input type="text" name="tempat_lahir" value="<?= $data['tempat_lahir'] ?>" placeholder="Masukkan Tempat Lahir" required>
+        <input type="date" name="tanggal_lahir" value="<?= $data['tanggal_lahir'] ?>" required>
         <textarea name="alamat" placeholder="Masukkan Alamat"><?= $data['alamat'] ?></textarea>
-        <input name="tahun_lulus" value="<?= $data['tahun_lulus'] ?>" placeholder="Masukkan Tahun">
-       
+        <input type="text" name="tahun_lulus" value="<?= $data['tahun_lulus'] ?>" placeholder="Masukkan Tahun">
+        
         <select name="jurusan" value="<?= $data['jurusan'] ?>">
             <option>Pilihan Jurusan</option>
             <option value="RPL">RPL</option>
@@ -43,6 +56,10 @@ if(isset($_POST['perbarui'])) {
             <option value="Animasi">Animasi</option>
         </select>
         <button name="perbarui">Perbarui</button>
+        
     </form>
+    </div>
+    </main>
+
 </body>
 </html>

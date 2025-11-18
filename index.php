@@ -13,9 +13,17 @@ include 'koneksi.php';
 </head>
 <body>
 
-    <div class="nav">
-        <h1>Manajemen Data Alumni</h1>
-        <a href="tambah.php">+ Tambah</a>
+    <video autoplay muted loop id="video-bg">
+        <source src="bg1.mp4" type="video/mp4">
+    </video>
+
+    <div id="content"></div>
+
+    <div class="container-nav">
+        <div class="nav">
+            <h1>Manajemen Data Alumni</h1>
+            <a href="tambah.php">+ Tambah</a>
+        </div>
     </div>
 
 
@@ -28,7 +36,8 @@ include 'koneksi.php';
               <button type="submit" >Cari</button>
             </form>
         </div>
-            
+    
+    <div class="container-tb">    
     <table border="1">
         <tr>
             <th>No</th>
@@ -72,13 +81,14 @@ while ($data = mysqli_fetch_assoc($result)) {
     <td>{$data['jurusan']}</td>
     <td>
     <a href='edit.php?id_alumni={$data['id_alumni']}'>Edit</a>
-    <a href='hapus.php?id_alumni={$data['id_alumni']}'>Hapus</a>
+    <a href='hapus.php?id_alumni={$data['id_alumni']}' onclick=\"return confirm('Yakin ingin hapus?')\">Hapus</a>
     </td>
     </tr>";
 }
 ?>
 
     </table>
+    </div>
     
 </body>
 </html>

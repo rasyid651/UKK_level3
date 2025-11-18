@@ -9,19 +9,31 @@ include 'koneksi.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Alumni</title>
+    <link rel="stylesheet" href="./css/tambah.css">
 </head>
 <body>
 
-    <div>
-        <h1>Tambah Data Alumni</h1>
-        <a href="index.php">Kembali</a>
+     <video autoplay muted loop id="video-bg">
+        <source src="bg1.mp4" type="video/mp4">
+    </video>
+
+    <div id="content"></div>
+
+    <div class="container-nav">
+        <div class="nav">
+            <h1>Manajemen Data Alumni</h1>
+            <a href="index.php">Kembali</a>
+        </div>
     </div>
 
-    <form action="tambah.php" method="post">
-        <input type="text" name="nama" placeholder="Masukkan Nama">
-        <input type="text" name="nik" placeholder="Masukkan Nik">
-        <input type="text" name="nisn" placeholder="Masukkan Nisn">
-        <input type="text" name="tempat_lahir" placeholder="Masukkan Tempat Lahir">
+    <main>
+        <div class="container-form">
+            <h2>Tambah Data Alumni</h2>
+        <form action="tambah.php" method="post">
+            <input type="text" name="nama" placeholder="Masukkan Nama">
+            <input type="text" name="nik" placeholder="Masukkan Nik">
+            <input type="text" name="nisn" placeholder="Masukkan Nisn">
+            <input type="text" name="tempat_lahir" placeholder="Masukkan Tempat Lahir">
         <input type="date" name="tanggal_lahir">
         <textarea name="alamat" placeholder="Masukkan Alamat"></textarea>
         <input type="text" name="tahun_lulus" placeholder="Masukkan Tahun Lulus">
@@ -33,8 +45,7 @@ include 'koneksi.php';
             <option value="Animasi">Animasi</option>
         </select>
         <button name="simpan">Simpan</button>
-    </form>
-    
+        
     <?php 
         if(isset($_POST['simpan'])) {
         $sql = "INSERT INTO alumni (
@@ -55,6 +66,10 @@ include 'koneksi.php';
         echo "<p>Berhasil! <a href='index.php'>Kembali</a></p>";
         }
     ?>
+    </form>
+    </div>
+    </main>
+
 
 </body>
 </html>
