@@ -23,7 +23,7 @@ body {
 #content {
     position: relative;
     z-index: 1;
-    color: #f0f0ff; /* putih lembut */
+    color: #f0f0ff; 
 }
 
 /* NAVBAR */
@@ -31,7 +31,6 @@ body {
     background-color: rgba(105, 14, 232, 0.45);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-
 
     position: fixed;
     top: 0;
@@ -55,7 +54,7 @@ body {
 .nav a {
     text-decoration: none;
     color: white;
-    background-color: #bb00ff; /* neon purple */
+    background-color: #bb00ff;
     padding: 10px 14px;
     font-weight: 500;
     font-size: 16px;
@@ -63,7 +62,7 @@ body {
 }
 
 .nav a:hover {
-    background-color: #9b4dff; /* hover lebih soft */
+    background-color: #9b4dff;
     transition: 0.4s;
 }
 
@@ -133,7 +132,7 @@ body {
 
 .container-tb th {
     padding: 26px 24px;
-    color: #00aaff; /* electric blue highlight */
+    color: #00aaff;
 }
 
 .container-tb td {
@@ -141,14 +140,34 @@ body {
     text-align: center;
 }
 
-/* Tombol EDIT & HAPUS */
-.container-tb td a {
+.btn-edit {
+    background: #bb00ff;
+    color: white; 
     text-decoration: none;
     padding: 12px 18px;
     font-weight: 500;
     font-size: 16px;
     border-radius: 8px;
     margin: 4px;
-    background-color: #bb00ff;
+    transition: background-color 0.4s;
+}
+
+.btn-edit:hover {
+    background-color: #9b4dff;
+}
+
+.btn-hapus {
+    background: #FF4136; 
     color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 4px;
+    transition: background-color 0.4s;
+}
+
+.btn-hapus:hover {
+    background-color: #CC0000; 
 }

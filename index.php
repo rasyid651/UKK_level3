@@ -80,8 +80,8 @@ while ($data = mysqli_fetch_assoc($result)) {
     <td>{$data['tahun_lulus']}</td>
     <td>{$data['jurusan']}</td>
     <td>
-    <a href='edit.php?id_alumni={$data['id_alumni']}'>Edit</a>
-    <a href='hapus.php?id_alumni={$data['id_alumni']}' onclick=\"return confirm('Yakin ingin hapus?')\">Hapus</a>
+    <a class='btn-edit' href='edit.php?id_alumni={$data['id_alumni']}'>Edit</a>
+    <a class='btn-hapus' href='hapus.php?id_alumni={$data['id_alumni']}' onclick=\"return confirm('Yakin ingin hapus?')\">Hapus</a>
     </td>
     </tr>";
 }
