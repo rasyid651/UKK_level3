@@ -16,4 +16,4 @@ Muhammad Al Rasyid UIUX Design & Front-End | Figma & VsCode
 
 @uiuxdesign
 
-@semangatt ukk nyaa❤️
+@semangatt_ukk_nyaa❤️
